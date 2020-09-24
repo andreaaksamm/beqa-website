@@ -1,0 +1,26 @@
+/*------------------------------------*\
+		$LAYOUT
+\*------------------------------------*/
+.c-site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.c-site-main {
+	flex-grow: 1;
+}
+
+.o-inner-wide {
+	margin: 0 auto;
+	max-width: 1024px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.o-inner {
+	margin: 0 auto;
+	max-width: 740px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}

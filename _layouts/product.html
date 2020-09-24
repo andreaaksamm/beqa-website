@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="c-site-main">
+	<div class="c-product-page">
+
+		<div class="c-product-page__header">
+			{% include components/product.html item=page %}
+		</div>
+
+		{% if page.docs %}
+		<div class="c-product-page__content-header">
+			<div class="o-inner">
+				<h3>{{page.name}} Documentation</h3>
+				<div id="js-toc" class="c-product-page__toc"></div>
+			</div>
+		</div>
+		{% endif %}
+
+		<div class="c-product-page__content o-inner">
+			<div class="c-product-page__post-content o-content">
+				{{content}}
+			</div>
+		</div>
+	</div>
+</div>

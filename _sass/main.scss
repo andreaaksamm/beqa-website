@@ -1,0 +1,121 @@
+/*------------------------------------*\
+		$MAIN
+\*------------------------------------*/
+
+.c-intro {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--color-border);
+	background: url("../../assets/images/patterns/3.png");
+	min-height: 220px;
+}
+
+		.c-intro__inside {
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+			text-align: center;
+		}
+
+				.c-intro__title {
+				}
+
+				.c-intro__sub-title {
+					margin-top: 1rem;
+				}
+
+.c-products {
+}
+
+.c-products > * + * {
+	border-top: 1px solid var(--color-border);
+}
+
+		.c-product {
+			position: relative;
+			padding-top: 2rem;
+			background-color: var(--color-white);
+		}
+
+		@media (min-width: 780px) {
+			.c-product {
+				padding-top: 4rem;
+			}
+		}
+
+				@media (min-width: 780px) {
+					.c-product:nth-child(even) .c-product__inside {
+						flex-direction: row-reverse;
+					}
+
+					.c-product__inside {
+						display: flex;
+						align-items: center;
+					}
+				}
+
+						.c-product__description {
+							margin-top: 0.25rem;
+						}
+
+						.c-product__actions {
+							display: flex;
+							justify-content: space-between;
+							margin-top: 1rem;
+							text-transform: uppercase;
+							font-size: 1.5rem;
+							font-weight: 600;
+						}
+
+						@media (min-width: 780px) {
+							.c-product__actions {
+								display: block;
+							}
+
+							.c-product__actions > * + * {
+								margin-left: 0.75rem;
+							}
+						}
+
+						.c-product__content {
+							margin-bottom: 2rem;
+						}
+
+						.c-product__media {
+							margin-top: 2rem;
+							align-self: self-end;
+						}
+
+						@media (min-width: 780px) {
+							.c-product:nth-child(even) .c-product__media {
+								margin-right: 3rem;
+							}
+
+							.c-product:nth-child(odd) .c-product__media {
+								margin-left: 3rem;
+							}
+
+							.c-product__media {
+								margin-top: 0;
+							}
+						}
+
+								.c-product__image-wrapper {
+									box-shadow: 0px 0px 8px 2px #ccc;
+									background-color: #f7f7f7;
+								}
+
+										@media (min-width: 550px) {
+												.c-product__image--mobile {
+													display: none;
+												}
+										}
+
+										.c-product__image--desktop {
+											display: none;
+										}
+
+										@media (min-width: 550px) {
+											.c-product__image--desktop {
+												display: block;
+											}
+										}

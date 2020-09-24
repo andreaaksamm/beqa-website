@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>{{site.title}}</title>
+
+		<meta name="description" content="{{site.description}}">
+		<meta name="author" content="SitePoint">
+
+		<link rel="stylesheet" href="/assets/css/lib/normalize.css">
+		<link rel="stylesheet" href="/assets/css/lib/aos.css">
+		<link rel="stylesheet" href="/assets/css/lib/tocbot.css">
+		<link rel="stylesheet" href="/assets/css/lib/prism/prism.css">
+		<link rel="stylesheet" href="/assets/css/lib/prism/base16-bright.dark.css">
+
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+
+	<body>
+		<div class="c-site">
+			{% include components/header.html %}
+
+			{{content}}
+
+			{% include components/footer.html %}
+		</div>
+
+		<script src="/assets/js/lib/jquery.min.js"></script>
+		<script src="/assets/js/lib/aos.js"></script>
+		<script src="/assets/js/lib/lazysizes.min.js"></script>
+		<script src="/assets/js/lib/tocbot.min.js"></script>
+		<script src="/assets/js/lib/prism.js"></script>
+
+		<script src="/assets/js/main.js"></script>
+	</body>
+</html>

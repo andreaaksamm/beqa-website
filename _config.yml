@@ -1,0 +1,13 @@
+title: Beqa Themes
+email: hello@beqathemes.com
+description: >-
+  We are Beqa Themes
+
+baseurl: ""
+url: ""
+
+twitter_username: beqathemes
+
+collections:
+  products:
+    output: true

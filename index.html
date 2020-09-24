@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="c-site-main">
+
+	<div class="c-intro">
+		<div class="c-intro__inside o-inner-wide">
+			<h1 class="c-intro__title">Simple theme for ghost</h1>
+			<div class="c-intro__sub-title">Discover a beautiful custom design for your publication</div>
+		</div>
+	</div>
+
+	<div class="c-products">
+		{% assign products = site.products | sort: 'order' | reverse %}
+
+		{% for product in products %}
+			{% include components/product.html item=product %}
+		{% endfor %}
+	</div>
+
+</div>

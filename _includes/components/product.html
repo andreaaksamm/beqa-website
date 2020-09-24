@@ -1,0 +1,26 @@
+<div class="c-product">
+
+	<div class="c-product__inside o-inner-wide">
+
+		<div class="c-product__content">
+			<h2 class="c-product__title"><a class="c-product__title-link" href="{{include.item.url}}">{{include.item.name}}</a></h2>
+			<p class="c-product__description">{{include.item.description}}</p>
+
+			<div class="c-product__actions">
+				<span class="c-product__actions-item"><a class="c-product__actions-link" href="#">preview</a></span>
+				<span class="c-product__actions-item"><a class="c-product__actions-link" href="#">download</a></span>
+			</div>
+		</div>
+
+		<div class="c-product__media" data-aos="fade-{% cycle 'left', 'right' %}">
+			<div class="c-product__image-wrapper">
+				<a href="{{include.item.url}}">
+					<img class="c-product__image c-product__image--mobile lazyload" src="/assets/images/products/{{include.item.short_name}}/screenshot-mobile.jpg" />
+					<img class="c-product__image c-product__image--desktop lazyload" src="/assets/images/products/{{include.item.short_name}}/screenshot-desktop.jpg" />
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+</div>

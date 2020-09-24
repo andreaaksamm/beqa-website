@@ -1,0 +1,77 @@
+.c-site-header {
+	position: relative;
+	padding: 1.25rem 0;
+}
+
+.c-site-header::after {
+	position:absolute;
+	content:"";
+	left:0;
+	bottom: 0;
+	width: 100%;
+	height:1px;
+	background:linear-gradient(to right, #5fb641, #ffb605, #fb8501, #e6433a, #974597, #009edf)
+}
+
+		.c-site-header__inside {
+			display: flex;
+			align-items: center;
+		}
+
+				.c-site-header__branding {
+					font-size: 3.2rem;
+					font-weight: 700;
+				}
+
+				.c-site-header__branding:hover {
+					opacity: 0.8;
+				}
+
+				@media (min-width: 550px) {
+					.c-site-header__branding {
+						font-size: 2.8rem;
+					}
+				}
+
+				.c-site-header__link {
+					display: inline-block;
+					padding-top: 0.5rem;
+				}
+
+				@media (min-width: 550px) {
+					.c-site-header__link--mobile {
+						display: none;
+					}
+				}
+
+				.c-site-header__link--desk {
+					display: none;
+				}
+
+				@media (min-width: 550px) {
+					.c-site-header__link--desk {
+						display: block;
+					}
+				}
+
+				.c-site-header__actions {
+					margin-left: auto;
+				}
+
+						.c-site-header__action {
+							line-height: 0;
+						}
+
+						.c-site-header__action a {
+							outline: 0;
+						}
+
+						.c-site-header__action svg {
+							fill: var(--color-meta);
+							width: 20px;
+							height: 20px;
+						}
+
+						.c-site-header__action--twitter:hover svg {
+							fill: var(--color-twitter);
+						}
