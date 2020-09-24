@@ -5,6 +5,8 @@ layout: product
 description: EIN is a simple Ghost theme with a clean and modern design suitable for everyone who wants to share their stories.
 order: 1
 docs: true
+link: https://github.com/andreaaksamm/ein
+preview: https://ein.beqathemes.com/
 ---
 
 ### Instructions
