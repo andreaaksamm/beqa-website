@@ -6,6 +6,7 @@ description: Trebuchet is a simple Ghost theme with a clean and modern design su
 version: 1.0.0
 order: 2
 docs: true
+link: https://github.com/andreaaksamm/trebuchet
 preview: https://trebuchet.beqathemes.com/
 ---
 
